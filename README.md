@@ -39,6 +39,35 @@ Hymns you add via **Add Hymns** are stored separately under `Data/Added Hymns` n
 - Microsoft PowerPoint (any recent version) installed
 - Python 3.12+ (only if running/building from source)
 
+## Installing the prebuilt release
+
+If you just want to run the app without setting up Python, download the latest build from the [Releases page](https://github.com/orapagier/SDA-HYMNAL/releases).
+
+Each release provides two things:
+
+- `SDA Hymnal.exe` — the application executable
+- `_internal` — a folder (may be provided as a `.zip`) containing the Python/Qt runtime and the bundled hymn library
+
+**The `.exe` will not run on its own.** Both must be downloaded and placed **side by side in the same folder**:
+
+```
+SDA Hymnal/
+├── SDA Hymnal.exe
+└── _internal/
+    ├── Data/           # hymn slideshows
+    ├── PySide6/        # Qt runtime
+    └── ...             # other runtime dependencies
+```
+
+**Steps:**
+
+1. Download `SDA Hymnal.exe` and `_internal` (or `_internal.zip`) from the same release.
+2. If `_internal` was downloaded as a `.zip`, extract it so you end up with an `_internal` folder.
+3. Move both `SDA Hymnal.exe` and the `_internal` folder into the same directory, as shown above.
+4. Double-click `SDA Hymnal.exe` to launch.
+
+On first launch the app registers its own folder as a trusted PowerPoint location — if the folder moves later, keep `SDA Hymnal.exe` and `_internal` together, or the app won't find its hymn library.
+
 ## Running from source
 
 ```bash
