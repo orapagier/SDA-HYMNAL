@@ -52,7 +52,7 @@ Each release provides two things:
 
 ```
 SDA Hymnal/
-├── SDA Hymnal.exe
+├── SDA Hymnal v*.*.*.exe
 └── _internal/
     ├── Data/           # hymn slideshows
     ├── PySide6/        # Qt runtime
@@ -61,12 +61,12 @@ SDA Hymnal/
 
 **Steps:**
 
-1. Download `SDA Hymnal.exe` and `_internal` (or `_internal.zip`) from the same release.
+1. Download `SDA Hymnal v*.*.*.exe` and the `_internal` folder.
 2. If `_internal` was downloaded as a `.zip`, extract it so you end up with an `_internal` folder.
-3. Move both `SDA Hymnal.exe` and the `_internal` folder into the same directory, as shown above.
-4. Double-click `SDA Hymnal.exe` to launch.
+3. Move both `SDA Hymnal v*.*.*.exe` and the `_internal` folder into the same directory, as shown above.
+4. Double-click `SDA Hymnal v*.*.*.exe` to launch.
 
-On first launch the app registers its own folder as a trusted PowerPoint location — if the folder moves later, keep `SDA Hymnal.exe` and `_internal` together, or the app won't find its hymn library.
+On first launch the app registers its own folder as a trusted PowerPoint location — if the folder moves later, keep `SDA Hymnalv*.*.*.exe` and `_internal` together, or the app won't find its hymn library.
 
 ## Running from source
 
